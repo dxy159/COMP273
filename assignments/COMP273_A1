@@ -1,0 +1,24 @@
+1.
+
+a) Like a C string, the sequence of characters is always terminated by a '\0', which is represented by 8 bits of 0s. For a fraction, I would do the same as I would allocate 40 bits of memory. The first 16 bits for the numerator integer, the second 8 bits to be all 1s to represent a fraction line, then the third 16 bits for the denominator integer. When addressing, this fraction will use up 5 bytes at the least.
+
+b) For example, 5/7 would be: 00000000 00000101 11111111 00000000 00000111
+
+c) Because each fraction uses up 40 bits of space, 10 fractions will use up 400 bits, or 50 bytes.
+
+d) Because 8 bits of 1s already represents a character, we would need to compromise that character such that when it is between two integer values, it will be used as a fraction symbol instead. 
+
+2.
+
+A) (i) Decimal: = (D*16^0) + (C*16^1) + (4*16^2) + (5*16^3) + (1*16^4) = 13 + 192 + 1024 + 20480 + 65536 = 87245
+	   Binary: = (0001) + (0100) + (0011) + (1100) + (1101) = 00010100001111001101
+   (ii) Decimal: = (2^0) + (2^1) + (2^2) + (2^3) + (2^4) + (2^5) + (2^7) + (2^8) + (2^11) = 2495
+   	   Hex: = (1001) + (1011) + (1111) = 9 + B + F = 9BF
+   (iii) Binary: = (2^10) + (2^0) = 10000000001
+   		 Hex: = (4*16^2) + (1*16^0) = 401
+
+B) First Column (Address): 0010 0010 0101
+   Second Column (Value): 
+   //TODO
+
+3.
