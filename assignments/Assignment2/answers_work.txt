@@ -1,0 +1,20 @@
+A) 5 * 1000000 = 5000000
+5000000 / 11 = 454545 cycles/second or 0.455 MHz
+
+B) 64 bits = 8B
+= 8B * 300MHz
+= 2400 MB/second
+
+C) Should be the one of largest ps, whi9ch is memory, so the answer is 550ps.
+
+D) Is the sum of all the stages 
+= 300 + 400 + 300 + 550 + 100
+= 1650 pps
+
+E) 2.5 GHz = 2.5 * 10^9 clock ticks per second = 2500000000 ticks/second
+
+F) 1/2ns = 500000000 cycles
+
+G) (2.0 * 10^9 cycles/second) / (10 instructions/cycle) = 2 * 10^8 instructions/second
+
+H) 1/((2ns)*4cycles/instructions) = 1.25 * 10^9 instructions/second
