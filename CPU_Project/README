@@ -1,0 +1,37 @@
+Circuit Design
+
+Description of the different black boxes:
+Register_8b_locked
+	8 bit register which has control buffers on both ends which lock data inside unless the register is on in which case the buffers are interlocked according to R/W mode
+
+Register_8b_passthrough
+	8 bit register which always writes it's contents onto the output pins
+
+Register_8b_passin
+	8bit register which always writes it's input to the register memory
+
+Ram_16B
+	16 Byte ram adressed through a 4 bit address
+
+Add_Sub_8bits
+	8bit version of the adder/substractor from the assignment
+
+Overflow_dector
+	Black box which detects overflows in the adder/substractor operations 
+
+ALU
+	Black box which takes in ALU op codes and does the appropriate operations
+
+ADD3IF5
+	Adder used in the BCD converter 
+
+Register_4b
+	4 bit pass through register used for the 7 segment displays
+
+DPath_FETCH
+	contains the logic to implement the fetch operation for the processor
+	1 PC->MAR             PCADDER[PC]->(PC+1)
+	2 MAR->RAM ADRESS     (PC+1)->PC
+	3 RAM[ADDRESS]->RAM DATA
+	4 RAM DATA->MBR
+	5 MBR->IR
